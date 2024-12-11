@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumple, Caro!</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Playfair Display', serif; /* Fuente elegante */
+            background: linear-gradient(to bottom, #e0f7fa, #ffffff); /* Fondo degradado más suave */
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #00796b; /* Verde oscuro */
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+            line-height: 1.6;
+            color: #004d40; /* Verde oscuro */
+        }
+        button {
+            background-color: #00796b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #004d40;
+        }
+        .code {
+            margin-top: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #d32f2f;
+            display: none;
+        }
+        .carousel {
+            border-radius: 15px; /* Bordes redondeados */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+        }
+    </style>
+</head>
+<body>
+    <h1>Para la mejor hermana:</h1>
+
+    <!-- Carrusel de Bootstrap -->
+    <div id="birthdayCarousel" class="carousel slide w-75" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Imagen 1 -->
+            <div class="carousel-item active">
+                <img src="image1.jpeg" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <!-- Imagen 4 -->
+            <div class="carousel-item">
+                <img src="image4.jpeg" class="d-block w-100" alt="Imagen 4">
+            </div>
+            <div class="carousel-item">
+                <img src="image9.jpeg" class="d-block w-100" alt="Imagen 9">
+            </div>
+            <div class="carousel-item">
+                <img src="image10.jpeg" class="d-block w-100" alt="Imagen 10">
+            </div>
+            <div class="carousel-item">
+                <img src="image11.jpeg" class="d-block w-100" alt="Imagen 11">
+            </div>
+            <div class="carousel-item">
+                <img src="image12.jpeg" class="d-block w-100" alt="Imagen 12">
+            </div>
+            <div class="carousel-item">
+                <img src="image13.jpeg" class="d-block w-100" alt="Imagen 13">
+            </div>
+
+        </div>
+        <!-- Controles del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#birthdayCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#birthdayCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <p>KQ, gracias por juntar a la familia estos días. Pasamos unos días hermosos que van a quedar para siempre guardados en nuestra memoria, junto con las fotos que nos sacamos, juju.</p>
+    <img style="max-width: 300px;" src="image7.jpeg" alt="">
+    <p>Sos una hermana genial, y doy gracias por tenerte como tal. (Seguro Conan también)</p>
+    <img style="max-width: 300px;" src="image8.jpeg" alt="">
+    <p>Siempre estás para todos, te acordás de todos, y eso te hace alguien especial.</p>
+    <img style="max-width: 300px;" src="image2.jpeg" alt="">
+    <p>Así como tenés un gran carácter, también tenés un gran corazón y lo demostrás día a día con todos, preocupándote, preguntando cómo estamos, acordándote de cosas que te dijimos que nos gustaban o queríamos, o como en el caso de este finde que pasó, que nos uniste a todos e hiciste que disfrutemos juntos toda la familia.</p>
+    <img style="max-width: 300px;" src="image6.jpeg" alt="">
+    <p>Estoy seguro de que más de una persona se muere de ganas de tener una hermana como vos cerca suyo.</p>
+    <button onclick="showCode()">Hacé click acá y enviale este código a Marc, que te va a dar algo a cambio. juju</button>
+    <div class="code" id="secretCode">KQCH1T4</div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showCode() {
+            document.getElementById('secretCode').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
